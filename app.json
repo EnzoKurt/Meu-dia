@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Meu Dia",
+    "slug": "meu-dia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "meudia",
+    "plugins": [
+      "expo-router",
+      "expo-notifications"
+    ],
+    "android": {
+      "package": "com.meudia.pessoal",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.meudia.pessoal"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
