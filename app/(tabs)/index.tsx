@@ -274,4 +274,24 @@ const styles = StyleSheet.create({
   switchRow: { flexDirection: 'row', alignItems: 'center', borderTopWidth: 1, borderTopColor: '#1E293B', borderBottomWidth: 1, borderBottomColor: '#1E293B', paddingVertical: 12, marginBottom: 16 },
   switchTitle: { color: '#F8FAFC', fontWeight: '800', fontSize: 14 },
   switchSub: { color: '#64748B', fontSize: 11, marginTop: 3 },
+  headerActions: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  gap: 8,
+},
+
+bellButton: {
+  width: 44,
+  height: 44,
+  borderRadius: 14,
+  backgroundColor: '#172235',
+  borderWidth: 1,
+  borderColor: '#2B405C',
+  alignItems: 'center',
+  justifyContent: 'center',
+},
+
+bellText: {
+  fontSize: 20,
+},
 });
