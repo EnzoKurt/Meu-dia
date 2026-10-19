@@ -45,13 +45,22 @@ export default function HomeScreen() {
   return (
     <Screen>
       <View style={styles.topRow}>
-        <View>
-          <Text style={styles.eyebrow}>MEU DIA</Text>
-          <Text style={styles.greeting}>{greeting()} 👋</Text>
-        </View>
-        <Pressable style={styles.planButton} onPress={() => router.push('/planejar')}>
+        <View style={styles.headerActions}>
+          <Pressable
+            style={styles.bellButton}
+            onPress={() => router.push('/lembretes')}
+            accessibilityLabel="Abrir lembretes"
+          >
+          <Text style={styles.bellText}>🔔</Text>
+            </Pressable>
+          
+          <Pressable
+            style={styles.planButton}
+            onPress={() => router.push('/planejar')}
+          >
           <Text style={styles.planButtonText}>Objetivos</Text>
-        </Pressable>
+          </Pressable>
+        </View>
       </View>
 
       <Text style={styles.date}>{capitalize(formatLongDate(today))}</Text>
