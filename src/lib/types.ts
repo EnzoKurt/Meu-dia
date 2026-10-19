@@ -1,10 +1,17 @@
 export type Priority = 'alta' | 'media' | 'baixa';
 export type GoalFrequency = 'diaria' | 'semanal' | 'mensal';
 
+export type SubTask = {
+  id: string;
+  title: string;
+  completed: boolean;
+};
+
 export type Task = {
   id: string;
   title: string;
   notes: string;
+  subtasks?: SubTask[];
   date: string;
   time: string;
   priority: Priority;
